@@ -10,12 +10,12 @@ export default function Bar({ currentImage, imageArray }) {
         change(id);
         currentImage(id);
     }
-    // useEffect(()=>{
-    //     setInterval(()=>{
-    //         console.log("cha")
-    //         moveBackward();
-    //     },4000);
-    // },[]);
+    useEffect(()=>{
+        setInterval(()=>{
+            console.log("cha")
+            moveBackward();
+        },4000);
+    },[]);
     function moveBackward() {
         console.log("moveback");
         change((value) => {
