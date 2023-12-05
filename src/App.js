@@ -45,18 +45,22 @@ function App() {
                 })}
             </div>
             <Form></Form>
+            <h2 style={{textAlign:"center"}}>what are you searching For?</h2>
             <div className='cardsContainer'>
                 {arr.map((el, i) => {
                     return (
-                        <div className="cardContainer Nohover"style={{height:"auto",width:"25.3%"}} >
-                            <div style={{margin:"20px"}}>
-                                <h6 style={{marginTop:"0px"}}>
+                        <div className="cardContainer Nohover" style={{ height: "auto", width: "25.3%" }} >
+                            <div style={{ margin: "20px" }}>
+                                <h6 style={{ marginTop: "0px" }}>
                                     {el}
                                 </h6>
                             </div>
                         </div>
                     );
                 })}
+            </div>
+            <div>
+                
             </div>
         </>
     )
