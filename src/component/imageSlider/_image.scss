@@ -1,0 +1,111 @@
+$width: 100vw;
+$imgsNumber: 3;
+$height: 646px;
+
+.container {
+    position: relative;
+}
+
+.sliderContainer {
+    width: max-content;
+}
+
+.showImg {
+    height: 390px;
+    border-radius: 20px;
+    cursor: zoom-in;
+}
+
+.slideImgs:nth-child(1) {
+    margin-left: 0;
+}
+
+@import "./bar";
+
+.slideBar {
+    display: flex;
+    padding: 20px 0px;
+}
+
+.imgContainer {
+    position: relative;
+    z-index: 5;
+    border-radius: 20px;
+    margin-left: 0vw;
+    margin-right: 0vw;
+    height: $height;
+    border: 4px solid transparent;
+    padding: 0;
+
+    // direction: rtl;
+    img {
+        max-width: 99vw;
+        width: 100vw;
+    }
+}
+
+//new stuff
+.showBar {
+    max-width: 99vw;
+    overflow-x: hidden;
+    border: 0px;
+
+    // direction: rtl;
+    div {
+        border: 0px;
+        width: ($width * $imgsNumber);
+        transition: 500ms;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        position: relative;
+    }
+}
+
+
+.activeI {
+    background-color: rgba($color: #fff, $alpha: 0.9);
+}
+
+.active {
+    transition: 250ms;
+}
+
+
+.forward,
+.backward {
+    border-radius: 50%;
+}
+
+
+.bar {
+    height: fit-content;
+}
+
+@for $i from 0 to $imgsNumber {
+    .IMG_#{$i} {
+        border-radius: 0px;
+        background-image: url("component/images/header" + $i+".jpg");
+        width: 100vw;
+        transform: scaleX(-1);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        span {
+            transform: scaleX(-1) translateY(-50%);
+            position: relative;
+            left: 60%;
+            top: 50%;
+            max-width: 450px;
+            max-height: 400px;
+            color: white;
+            button{
+                position: relative;
+                z-index: 50;
+                margin: 10px;
+                @include btnMix($bgcolor,white,auto,btnAnimation);
+            }
+        }
+    }
+}

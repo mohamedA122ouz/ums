@@ -1,0 +1,80 @@
+@mixin span() {
+    display: inline-block;
+    padding: 10px;
+    width: 96.6%;
+}
+
+$borderSize: 7px;
+
+#currentSelected {
+    border: 1px solid gray;
+    position: relative;
+    cursor: pointer;
+
+    span:hover {
+        background-color: #ebebeb;
+    }
+
+    span {
+        @include span();
+    }
+
+    &::after {
+        content: "";
+        border-top: $borderSize rgb(58, 57, 57) solid;
+        border-left: $borderSize transparent solid;
+        border-right: $borderSize transparent solid;
+        border-bottom: $borderSize transparent solid;
+        position: absolute;
+        margin-left: -20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.ComboBox {
+    box-shadow: 0 15px 15px 0 gray;
+    display: flex;
+    height: 0;
+    flex-direction: column;
+    font-size: 14px;
+    width: 100%;
+    position: absolute;
+    border-radius: 5px;
+    background-color: white;
+    max-height: 200px;
+    overflow-y: auto;
+    top: 103px;
+
+    input {
+        @include span();
+        width: 95.2%;
+        margin: 0px auto;
+    }
+
+    span:hover {
+        cursor: default;
+        background-color: #ebebeb;
+    }
+
+    .selectedElement {
+        color: white;
+        background-color: #377ebb;
+        border-radius: 5px;
+
+        span:hover {
+            color: black;
+            background: transparent;
+            border-radius: 10px;
+            background-image: linear-gradient(0deg, transparent, #f5f3f3ad, #fffdfdee, #f5f3f3ad, transparent);
+        }
+    }
+
+    span {
+        @include span();
+    }
+}
+
+#comboShow {
+    border: gray 1px solid;
+}

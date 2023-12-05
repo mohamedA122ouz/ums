@@ -1,0 +1,39 @@
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #243261;
+    height: 206px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 20px;
+    div {
+        margin-top: 30px;
+        .SVGContainer {
+            margin: auto;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+        }
+        h6 {
+            font-family: "Open sans";
+            margin: auto;
+            color: white;
+            font-weight: bold;
+            font-size: 12pt;
+            text-align: center;
+            margin-top: 15px;
+            padding: 0 30px;
+        }
+    }
+    transition: 300ms;
+    &:hover{
+        background-color: #505b81;
+        cursor: pointer;
+        transform: translateY(-15px);
+    }
+}
+.cardContainer.Nohover:hover{
+    background-color: #505b81;
+    cursor: pointer;
+    transform: translateY(0px);
+}

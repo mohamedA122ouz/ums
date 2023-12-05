@@ -1,0 +1,43 @@
+.FlexContainer {
+    $labelMargin: 25px;
+
+    .formContainer {
+        width: 600px;
+    }
+
+    display:flex;
+    flex-direction: row;
+
+    h2 {
+        font-size: 40px;
+    }
+
+    img {
+        height: 600px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        @import "./customCombobox/comboBox";
+        position: relative;
+
+        input {
+            @include span();
+        }
+
+        label {
+            display: inline-block;
+            margin-top: calc($labelMargin/2);
+            margin-bottom: $labelMargin;
+        }
+
+        button {
+            // color:rgb(122,173,255);
+            @include btnMix($bgcolor, white, 50%,btnAnimation);
+            margin: auto;
+            margin-top: 40px;
+            @include btnAnimation($bgcolor,btnAnimation);
+        }
+    }
+}

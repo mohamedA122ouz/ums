@@ -1,0 +1,52 @@
+@use "sass:list";
+$bgcolor: 122, 173, 255;
+@import "./component/form/btnMix";
+@import "./component/form/btnMixAni";
+@import "./component/imageSlider/image";
+@import "./component/cards/card";
+@import "./component/form/from";
+$colors : #99bdff,
+#edbe65,
+#ef8160;
+$blue: 1, 5, 7, 9;
+$yellow: 2, 4, 6, 10;
+$orange: 3, 8;
+@mixin color($Indexlist, $color) {
+    @each $b in $Indexlist {
+        .cardContainer:nth-child(#{$b}) {
+            .SVGContainer {
+                background-color: $color;
+            }
+        }
+    }
+
+}
+body{
+    font-family: "Open sans";
+}
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include color($blue, nth($colors, 1));
+    @include color($yellow, nth($colors, 2));
+    @include color($orange, nth($colors, 3));
+}
+.panel{
+    img{
+        height: 115px;
+        margin-left: -40%;
+        margin-right: 15%;
+    }
+    .inner{
+        display: flex;
+        margin: auto;
+        p{
+            display: flex;
+            align-items: center;
+            font-size: 14pt;
+            color: rgba($color: #000000, $alpha: 0.7);
+        }
+    }
+    display: flex;
+}

@@ -1,0 +1,64 @@
+.slideImgs {
+    z-index: 1;
+    display: inline-block;
+    width: 20px;
+    height: 3px;
+    background-color: rgba($color: #fff, $alpha: 0.5);
+    position: relative;
+    cursor: pointer;
+    transition: 250ms;
+    object-fit: contain;
+    bottom: 20px;
+}
+
+.barElements {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+@mixin toright{
+    right: 0px;
+}
+@mixin toleft{
+    right: 0px;
+}
+
+@mixin arrow($right){
+    position: absolute;
+    top: 0px;
+    @if($right == "toright"){
+        right: 0px;
+    }
+    @else{
+        left: 0px;
+    }
+    width: 200px;
+    height: $height;
+    z-index: 12;
+    svg {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        path{
+            stroke: rgba($color: #fff, $alpha: 0.5);
+            transition: 250ms;
+        }
+    }
+    &:hover{
+        cursor: pointer;
+        & svg{
+            path{
+                stroke: rgba($color: #fff, $alpha: 0.8);
+            }
+        }
+    }
+}
+.backward{
+    @include arrow("toleft");
+}
+.forward{
+    @include arrow("toright");
+}
