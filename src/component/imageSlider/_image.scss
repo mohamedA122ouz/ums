@@ -95,7 +95,7 @@ $height: 646px;
         span {
             transform: scaleX(-1) translateY(-50%);
             position: relative;
-            left: 60%;
+            left: 55%;
             top: 50%;
             max-width: 450px;
             max-height: 400px;
@@ -105,6 +105,9 @@ $height: 646px;
                 z-index: 50;
                 margin: 10px;
                 @include btnMix($bgcolor,white,auto,btnAnimation);
+            }
+            button.orange{
+                @include btnMix($bgcolor2,white,auto,btnAnimation2);
             }
         }
     }

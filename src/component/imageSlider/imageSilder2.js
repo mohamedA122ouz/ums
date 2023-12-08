@@ -8,7 +8,7 @@ export default function Silder({ imageArray }) {
     let smallText = ["Which manages the educational and administrative process within the university", "You book courses on Coursera or apply to Postgraduate Studies online using our system", "You can know your results, submit petitions, pay expenses, register for materials,file complaints"];
     let buttons = ["Discover",
         "Your Opinion Matters", "Apply for PG Studies",
-        "Book Your Course","Login"];
+        "Book Your Course", "Login"];
     let ref = useRef(null);
     const imgWidth = imageArray.map((el) => {
         let im = document.createElement("img");
@@ -31,8 +31,9 @@ export default function Silder({ imageArray }) {
                                 <span>
                                     <h2 style={{ fontSize: "30pt" }}>{text[i]}</h2>
                                     <p>{smallText[i]}</p>
-                                    {i!=2?<button>{buttons[i]}</button>:<button>Login</button>}
-                                    {i!=2?<button>{buttons[i+1]}</button>:""}
+                                    {console.log(i, i !== 1 && i !== 0 ? "orange" : "blue")}
+                                    {i != 2 ? <button className={i > 1 ? "orange" : "blue"}>{buttons[i]}</button> : <button className={i !== 1 && i !== 0 ? "orange" : "blue"}>Login</button>}
+                                    {i != 2 ? <button className={i > 1 ? "orange" : "blue"}>{buttons[i + 1]}</button> : ""}
                                 </span>
                             </div>
                         })}

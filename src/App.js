@@ -41,11 +41,11 @@ function App() {
             <Silder imageArray={[i1, i2, i3]}></Silder>
             <div className='cardsContainer'>
                 {cardText.map((el, i) => {
-                    return <Card key={"cardID" + i} text={el} />
+                    return <Card key={"cardID" + i} i={i} text={el} />
                 })}
             </div>
             <Form></Form>
-            <h2 style={{textAlign:"center"}}>what are you searching For?</h2>
+            <h2 style={{ textAlign: "center" }}>what are you searching For?</h2>
             <div className='cardsContainer'>
                 {arr.map((el, i) => {
                     return (
@@ -60,7 +60,7 @@ function App() {
                 })}
             </div>
             <div>
-                
+
             </div>
         </>
     )

@@ -43,7 +43,7 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 200px;
+  width: 100px;
   height: 646px;
   z-index: 12;
 }
@@ -68,7 +68,7 @@
   position: absolute;
   top: 0px;
   right: 0px;
-  width: 200px;
+  width: 100px;
   height: 646px;
   z-index: 12;
 }
@@ -154,7 +154,7 @@
 .IMG_0 span {
   transform: scaleX(-1) translateY(-50%);
   position: relative;
-  left: 60%;
+  left: 55%;
   top: 50%;
   max-width: 450px;
   max-height: 400px;
@@ -180,6 +180,23 @@
   animation: btnAnimation 250ms forwards;
   color: rgb(122, 173, 255);
 }
+.IMG_0 span button.orange {
+  border-radius: 25px;
+  padding: 10px;
+  width: auto;
+  background-color: rgb(237, 183, 85);
+  color: white;
+  border: none;
+  font-size: 11pt;
+  font-weight: bold;
+  border: 2px solid rgb(237, 183, 85);
+  transition: 250ms;
+}
+.IMG_0 span button.orange:hover {
+  box-shadow: 0px 7px 0 0 rgb(237, 183, 85);
+  animation: btnAnimation 250ms forwards;
+  color: rgb(237, 183, 85);
+}
 
 .IMG_1 {
   border-radius: 0px;
@@ -193,7 +210,7 @@
 .IMG_1 span {
   transform: scaleX(-1) translateY(-50%);
   position: relative;
-  left: 60%;
+  left: 55%;
   top: 50%;
   max-width: 450px;
   max-height: 400px;
@@ -219,6 +236,23 @@
   animation: btnAnimation 250ms forwards;
   color: rgb(122, 173, 255);
 }
+.IMG_1 span button.orange {
+  border-radius: 25px;
+  padding: 10px;
+  width: auto;
+  background-color: rgb(237, 183, 85);
+  color: white;
+  border: none;
+  font-size: 11pt;
+  font-weight: bold;
+  border: 2px solid rgb(237, 183, 85);
+  transition: 250ms;
+}
+.IMG_1 span button.orange:hover {
+  box-shadow: 0px 7px 0 0 rgb(237, 183, 85);
+  animation: btnAnimation 250ms forwards;
+  color: rgb(237, 183, 85);
+}
 
 .IMG_2 {
   border-radius: 0px;
@@ -232,7 +266,7 @@
 .IMG_2 span {
   transform: scaleX(-1) translateY(-50%);
   position: relative;
-  left: 60%;
+  left: 55%;
   top: 50%;
   max-width: 450px;
   max-height: 400px;
@@ -257,6 +291,23 @@
   box-shadow: 0px 7px 0 0 rgb(122, 173, 255);
   animation: btnAnimation 250ms forwards;
   color: rgb(122, 173, 255);
+}
+.IMG_2 span button.orange {
+  border-radius: 25px;
+  padding: 10px;
+  width: auto;
+  background-color: rgb(237, 183, 85);
+  color: white;
+  border: none;
+  font-size: 11pt;
+  font-weight: bold;
+  border: 2px solid rgb(237, 183, 85);
+  transition: 250ms;
+}
+.IMG_2 span button.orange:hover {
+  box-shadow: 0px 7px 0 0 rgb(237, 183, 85);
+  animation: btnAnimation 250ms forwards;
+  color: rgb(237, 183, 85);
 }
 
 .cardContainer {
@@ -298,6 +349,11 @@
   background-color: #505b81;
   cursor: pointer;
   transform: translateY(0px);
+}
+
+.SVGICONS {
+  width: 50%;
+  margin: 25%;
 }
 
 .FlexContainer {
@@ -721,6 +777,311 @@
   }
 }
 
+@keyframes btnAnimation2 {
+  0% {
+    background-color: #edb755;
+  }
+  1% {
+    background-color: rgba(237, 183, 85, 0.99);
+  }
+  2% {
+    background-color: rgba(237, 183, 85, 0.98);
+  }
+  3% {
+    background-color: rgba(237, 183, 85, 0.97);
+  }
+  4% {
+    background-color: rgba(237, 183, 85, 0.96);
+  }
+  5% {
+    background-color: rgba(237, 183, 85, 0.95);
+  }
+  6% {
+    background-color: rgba(237, 183, 85, 0.94);
+  }
+  7% {
+    background-color: rgba(237, 183, 85, 0.93);
+  }
+  8% {
+    background-color: rgba(237, 183, 85, 0.92);
+  }
+  9% {
+    background-color: rgba(237, 183, 85, 0.91);
+  }
+  10% {
+    background-color: rgba(237, 183, 85, 0.9);
+  }
+  11% {
+    background-color: rgba(237, 183, 85, 0.89);
+  }
+  12% {
+    background-color: rgba(237, 183, 85, 0.88);
+  }
+  13% {
+    background-color: rgba(237, 183, 85, 0.87);
+  }
+  14% {
+    background-color: rgba(237, 183, 85, 0.86);
+  }
+  15% {
+    background-color: rgba(237, 183, 85, 0.85);
+  }
+  16% {
+    background-color: rgba(237, 183, 85, 0.84);
+  }
+  17% {
+    background-color: rgba(237, 183, 85, 0.83);
+  }
+  18% {
+    background-color: rgba(237, 183, 85, 0.82);
+  }
+  19% {
+    background-color: rgba(237, 183, 85, 0.81);
+  }
+  20% {
+    background-color: rgba(237, 183, 85, 0.8);
+  }
+  21% {
+    background-color: rgba(237, 183, 85, 0.79);
+  }
+  22% {
+    background-color: rgba(237, 183, 85, 0.78);
+  }
+  23% {
+    background-color: rgba(237, 183, 85, 0.77);
+  }
+  24% {
+    background-color: rgba(237, 183, 85, 0.76);
+  }
+  25% {
+    background-color: rgba(237, 183, 85, 0.75);
+  }
+  26% {
+    background-color: rgba(237, 183, 85, 0.74);
+  }
+  27% {
+    background-color: rgba(237, 183, 85, 0.73);
+  }
+  28% {
+    background-color: rgba(237, 183, 85, 0.72);
+  }
+  29% {
+    background-color: rgba(237, 183, 85, 0.71);
+  }
+  30% {
+    background-color: rgba(237, 183, 85, 0.7);
+  }
+  31% {
+    background-color: rgba(237, 183, 85, 0.69);
+  }
+  32% {
+    background-color: rgba(237, 183, 85, 0.68);
+  }
+  33% {
+    background-color: rgba(237, 183, 85, 0.67);
+  }
+  34% {
+    background-color: rgba(237, 183, 85, 0.66);
+  }
+  35% {
+    background-color: rgba(237, 183, 85, 0.65);
+  }
+  36% {
+    background-color: rgba(237, 183, 85, 0.64);
+  }
+  37% {
+    background-color: rgba(237, 183, 85, 0.63);
+  }
+  38% {
+    background-color: rgba(237, 183, 85, 0.62);
+  }
+  39% {
+    background-color: rgba(237, 183, 85, 0.61);
+  }
+  40% {
+    background-color: rgba(237, 183, 85, 0.6);
+  }
+  41% {
+    background-color: rgba(237, 183, 85, 0.59);
+  }
+  42% {
+    background-color: rgba(237, 183, 85, 0.58);
+  }
+  43% {
+    background-color: rgba(237, 183, 85, 0.57);
+  }
+  44% {
+    background-color: rgba(237, 183, 85, 0.56);
+  }
+  45% {
+    background-color: rgba(237, 183, 85, 0.55);
+  }
+  46% {
+    background-color: rgba(237, 183, 85, 0.54);
+  }
+  47% {
+    background-color: rgba(237, 183, 85, 0.53);
+  }
+  48% {
+    background-color: rgba(237, 183, 85, 0.52);
+  }
+  49% {
+    background-color: rgba(237, 183, 85, 0.51);
+  }
+  50% {
+    background-color: rgba(237, 183, 85, 0.5);
+  }
+  51% {
+    background-color: rgba(237, 183, 85, 0.49);
+  }
+  52% {
+    background-color: rgba(237, 183, 85, 0.48);
+  }
+  53% {
+    background-color: rgba(237, 183, 85, 0.47);
+  }
+  54% {
+    background-color: rgba(237, 183, 85, 0.46);
+  }
+  55% {
+    background-color: rgba(237, 183, 85, 0.45);
+  }
+  56% {
+    background-color: rgba(237, 183, 85, 0.44);
+  }
+  57% {
+    background-color: rgba(237, 183, 85, 0.43);
+  }
+  58% {
+    background-color: rgba(237, 183, 85, 0.42);
+  }
+  59% {
+    background-color: rgba(237, 183, 85, 0.41);
+  }
+  60% {
+    background-color: rgba(237, 183, 85, 0.4);
+  }
+  61% {
+    background-color: rgba(237, 183, 85, 0.39);
+  }
+  62% {
+    background-color: rgba(237, 183, 85, 0.38);
+  }
+  63% {
+    background-color: rgba(237, 183, 85, 0.37);
+  }
+  64% {
+    background-color: rgba(237, 183, 85, 0.36);
+  }
+  65% {
+    background-color: rgba(237, 183, 85, 0.35);
+  }
+  66% {
+    background-color: rgba(237, 183, 85, 0.34);
+  }
+  67% {
+    background-color: rgba(237, 183, 85, 0.33);
+  }
+  68% {
+    background-color: rgba(237, 183, 85, 0.32);
+  }
+  69% {
+    background-color: rgba(237, 183, 85, 0.31);
+  }
+  70% {
+    background-color: rgba(237, 183, 85, 0.3);
+  }
+  71% {
+    background-color: rgba(237, 183, 85, 0.29);
+  }
+  72% {
+    background-color: rgba(237, 183, 85, 0.28);
+  }
+  73% {
+    background-color: rgba(237, 183, 85, 0.27);
+  }
+  74% {
+    background-color: rgba(237, 183, 85, 0.26);
+  }
+  75% {
+    background-color: rgba(237, 183, 85, 0.25);
+  }
+  76% {
+    background-color: rgba(237, 183, 85, 0.24);
+  }
+  77% {
+    background-color: rgba(237, 183, 85, 0.23);
+  }
+  78% {
+    background-color: rgba(237, 183, 85, 0.22);
+  }
+  79% {
+    background-color: rgba(237, 183, 85, 0.21);
+  }
+  80% {
+    background-color: rgba(237, 183, 85, 0.2);
+  }
+  81% {
+    background-color: rgba(237, 183, 85, 0.19);
+  }
+  82% {
+    background-color: rgba(237, 183, 85, 0.18);
+  }
+  83% {
+    background-color: rgba(237, 183, 85, 0.17);
+  }
+  84% {
+    background-color: rgba(237, 183, 85, 0.16);
+  }
+  85% {
+    background-color: rgba(237, 183, 85, 0.15);
+  }
+  86% {
+    background-color: rgba(237, 183, 85, 0.14);
+  }
+  87% {
+    background-color: rgba(237, 183, 85, 0.13);
+  }
+  88% {
+    background-color: rgba(237, 183, 85, 0.12);
+  }
+  89% {
+    background-color: rgba(237, 183, 85, 0.11);
+  }
+  90% {
+    background-color: rgba(237, 183, 85, 0.1);
+  }
+  91% {
+    background-color: rgba(237, 183, 85, 0.09);
+  }
+  92% {
+    background-color: rgba(237, 183, 85, 0.08);
+  }
+  93% {
+    background-color: rgba(237, 183, 85, 0.07);
+  }
+  94% {
+    background-color: rgba(237, 183, 85, 0.06);
+  }
+  95% {
+    background-color: rgba(237, 183, 85, 0.05);
+  }
+  96% {
+    background-color: rgba(237, 183, 85, 0.04);
+  }
+  97% {
+    background-color: rgba(237, 183, 85, 0.03);
+  }
+  98% {
+    background-color: rgba(237, 183, 85, 0.02);
+  }
+  99% {
+    background-color: rgba(237, 183, 85, 0.01);
+  }
+  100% {
+    background-color: rgba(237, 183, 85, 0);
+  }
+}
 body {
   font-family: "Open sans";
 }
