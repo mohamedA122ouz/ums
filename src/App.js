@@ -40,7 +40,6 @@ function App() {
         console.log("liste");
         let a = document.createElement("a");
         a.href = "#"+where;
-        a.target = "self";
         document.body.append(a);
         a.click();
         document.body.removeChild(a);
