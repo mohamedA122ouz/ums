@@ -8,10 +8,11 @@
     font-size: 11pt;
     font-weight: bold;
     border: 2px solid rgb(nth($bgcolor, 1), nth($bgcolor, 2), nth($bgcolor, 3));
-    transition: 250ms;
+    transition: 300ms;
     &:hover {
         box-shadow: 0px 7px 0 0 rgb(nth($bgcolor, 1), nth($bgcolor, 2), nth($bgcolor, 3));
-        animation: btnAnimation 250ms forwards;
+        background-color: white;
+        // animation: btnAnimation 250ms forwards;
         color: rgb(nth($bgcolor, 1), nth($bgcolor, 2), nth($bgcolor, 3));
     }
 }

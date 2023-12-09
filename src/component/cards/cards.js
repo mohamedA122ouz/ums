@@ -1,7 +1,7 @@
 import Icons from "../images/icons";
-export function Card({ color, text ,i}) {
+export function Card({ color, text ,i,onClick}) {
     return (
-        <div className="cardContainer" >
+        <div className="cardContainer" onClick={()=>onClick()}>
             <div>
                 <div className="SVGContainer" style={{ backgroundColor: "#" + color }}>
                     {Icons[i]}

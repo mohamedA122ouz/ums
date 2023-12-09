@@ -54,7 +54,7 @@ it won't work and you need to reform the selectors again like this
     }
 }
 ```
-it might looks obvious in this example but in real world it will be much complecated that you will need to rewrite your scss code again and this is not efficent.
+it might looks obvious in this example but in real world it would be much complecated that you will need to rewrite your scss code again and this is not efficent.
 
 rather you can make some thing like this
 ```scss

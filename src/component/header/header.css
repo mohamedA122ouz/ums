@@ -1,8 +1,14 @@
+.headerContainer{
+    background-color: #243261;
+    color:white;
+}
 .ulHeader {
     display: flex;
     list-style: none;
     margin-right: 60px;
+    margin-left: 10%;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .align {
@@ -12,7 +18,11 @@
     margin: auto;
     padding: 0;
 }
-
+.lang{
+    margin-right: 20%;
+    font-size: 14px !important;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 .avatar {
     padding: 10px;
 }
@@ -31,22 +41,34 @@
     border-radius: 50%;
     border: 2px solid orange;
 }
-
+.items:hover {
+    color:#2890f2;
+    fill: #2890f2;
+    transition: 250ms;
+}
+.SVGSocialMedia{
+    width: 16px;
+}
 li {
-    padding: 20px;
+    padding: 10px;
     cursor: pointer;
     border-bottom: 4px solid transparent;
 }
 
-.items {
-    opacity: 0.65;
-    transition: 250ms;
+.logo{
+    height: 30px;
 }
-
-.items:hover {
+.items {
     opacity: 1;
     transition: 250ms;
-    border-bottom: 4px solid orange;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color:currentColor;
 }
 
 .sideBar {

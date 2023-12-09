@@ -1,13 +1,14 @@
 .FlexContainer {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
     $labelMargin: 25px;
-
     .formContainer {
         width: 600px;
     }
-
-    display:flex;
-    flex-direction: row;
-
+    @media (max-width:700px) {
+        margin: auto;
+    }
     h2 {
         font-size: 40px;
     }
@@ -33,11 +34,9 @@
         }
 
         button {
-            // color:rgb(122,173,255);
-            @include btnMix($bgcolor, white, 50%,btnAnimation);
+            @include btnMix($bgcolor, white, 50%, btnAnimation);
             margin: auto;
             margin-top: 40px;
-            @include btnAnimation($bgcolor,btnAnimation);
         }
     }
 }

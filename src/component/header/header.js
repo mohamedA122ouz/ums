@@ -1,12 +1,10 @@
 import "./header.css";
-import logo from "../images/logo.svg";
-import avatar from "../images/image-avatar.png";
-import cart from "../images/icon-cart.svg";
+import { socialMedia } from "../images/icons";
 import { useState, useEffect, useRef } from 'react';
 function Header({ count, ui, hideContent ,showContent}) {
     const [width, changeWidth] = useState(() => window.innerWidth);
     const sideBar = useRef(null);
-    const items = ["Collections", "Men", "Women", "Content"];
+    const items = [<a  href="tel:+2-26831474 "><span style={{color:"gray"}}>Phone:</span>+2-26831474 </a>,...socialMedia];
     useEffect(() => {
         window.addEventListener("resize", () => {
             changeWidth(window.innerWidth);
@@ -37,11 +35,13 @@ function Header({ count, ui, hideContent ,showContent}) {
                             </svg>
                         </li>
                     </>)}
-                <li><img src={logo} alt="logo" /></li>
+                <li><img className="logo" src={"https://ums.asu.edu.eg//images/arms_of_Egypt_(Official).svg"} alt="logo" /></li>
                 {(width >= 800) && items.map((el, i) => <li className="items" key={"item" + i}>{el}</li>)}
                 <li className="align" key={"iteme"}></li>
-                <li onClick={ui} className="cartIcon" key={"itemee"}><img src={cart} alt="cart" />{count ? (<span className="num">{count}</span>) : ""}</li>
-                <li className="avatar" key={"itemeee"}><img src={avatar} alt="avatar" /></li>
+                <li className="lang items">
+                    <img src="https://ums.asu.edu.eg/images/Flags/eg.png" alt="egypt" />
+                    عربي
+                </li>
             </ul>
         </div>
     );

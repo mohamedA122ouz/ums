@@ -6,11 +6,9 @@ function ImageSlider({ imgs, thumbnail, zoom, existzoom }) {
     const [currentImage, UpdateImage] = useState(() => 0);
     function handleClickTh(e) {
         let imgAlt = e.target.alt;
-        console.log(imgAlt[imgAlt.length - 1]);
         UpdateImage(parseInt(imgAlt[imgAlt.length - 1]));
     }
     function moveForward() {
-        console.log("working");
         UpdateImage(e => (++e) % imgs.length);
     }
     function moveBackward() {

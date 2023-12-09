@@ -104,6 +104,7 @@ $height: 646px;
                 position: relative;
                 z-index: 50;
                 margin: 10px;
+                transition: 250ms;
                 @include btnMix($bgcolor,white,auto,btnAnimation);
             }
             button.orange{

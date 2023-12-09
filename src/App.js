@@ -7,6 +7,7 @@ import Silder from './component/imageSlider/imageSilder2';
 import { Card } from './component/cards/cards';
 import logo from "./component/images/logo.png";
 import Form from './component/form/form';
+import Header from './component/header/header';
 const cardText = [
     "Login",
     "Early Admission Request For Bachelor's students",
@@ -35,16 +36,28 @@ let arr = ["User Profile",
     "Payment History",
     "Bifurcation"]
 function App() {
+    function scrollTo(where){
+        console.log("liste");
+        let a = document.createElement("a");
+        a.href = "#"+where;
+        a.target = "self";
+        document.body.append(a);
+        a.click();
+        document.body.removeChild(a);
+    }
     return (
         <>
+        <Header></Header>
             <div className='panel' ><div className='inner'> <img src={logo} alt="UMS Logo" /><p>Electronic Management System of Ain Shams University</p></div></div>
             <Silder imageArray={[i1, i2, i3]}></Silder>
             <div className='cardsContainer'>
                 {cardText.map((el, i) => {
-                    return <Card key={"cardID" + i} i={i} text={el} />
+                    return <Card onClick={()=>scrollTo("viewer")} key={"cardID" + i} i={i} text={el} />
                 })}
             </div>
+            <div id='viewer'>
             <Form></Form>
+            </div>
             <h2 style={{ textAlign: "center" }}>what are you searching For?</h2>
             <div className='cardsContainer'>
                 {arr.map((el, i) => {

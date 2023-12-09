@@ -6,7 +6,7 @@ $bgcolor2: 237, 183, 85;
 @import "./component/imageSlider/image";
 @import "./component/cards/card";
 @import "./component/form/from";
-@include btnAnimation($bgcolor2,btnAnimation2);
+// @include btnAnimation($bgcolor2,btnAnimation2);
 $colors : #99bdff,
 #edbe65,
 #ef8160;
@@ -25,6 +25,9 @@ $orange: 3, 8;
 }
 body{
     font-family: "Open sans";
+}
+html{
+    scroll-behavior: smooth;
 }
 .cardsContainer {
     display: flex;
