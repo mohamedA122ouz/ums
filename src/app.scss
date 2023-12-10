@@ -1,4 +1,5 @@
 @use "sass:list";
+
 $bgcolor: 122, 173, 255;
 $bgcolor2: 237, 183, 85;
 @import "./component/form/btnMix";
@@ -6,6 +7,8 @@ $bgcolor2: 237, 183, 85;
 @import "./component/imageSlider/image";
 @import "./component/cards/card";
 @import "./component/form/from";
+@import "./component/footer/footer";
+@import "./component/onTop";
 // @include btnAnimation($bgcolor2,btnAnimation2);
 $colors : #99bdff,
 #edbe65,
@@ -38,6 +41,7 @@ html{
     @include color($orange, nth($colors, 3));
 }
 .panel{
+    background-color: white;
     img{
         height: 115px;
         margin-left: -40%;
@@ -54,4 +58,11 @@ html{
         }
     }
     display: flex;
+}
+#lowerContent{
+    width: 100%;
+    display: flex;
+}
+.contentMargin{
+    margin: auto;
 }

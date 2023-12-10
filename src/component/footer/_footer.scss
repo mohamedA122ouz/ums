@@ -1,0 +1,30 @@
+.footer {
+    display: flex;
+    width: 100%;
+    background-color: #eff2f9;
+    div {
+        margin: 0 auto;
+    }
+    h4 {
+        padding: 10px;
+    }
+    ul {
+        padding: 0px;
+    }
+    li {
+        transition: 300ms;
+        color: gray;
+        border-bottom: 1px solid transparent;
+        list-style: none;
+        width: fit-content;
+    }
+    li:hover {
+        box-sizing: border-box;
+        color: rgb(nth($bgcolor, 1), nth($bgcolor, 2), nth($bgcolor, 3));
+        border-bottom: 1px solid rgb(nth($bgcolor, 1), nth($bgcolor, 2), nth($bgcolor, 3));
+    }
+}
+.panelFooter {
+    height: 115px;
+    margin-top:50%;
+}

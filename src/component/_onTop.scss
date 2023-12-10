@@ -1,0 +1,24 @@
+@mixin onTopCircle($x,$y){
+    display: flex;
+    position: fixed;
+    left: $x;
+    top:$y;
+    height: 4vw;
+    width: 4vw;
+    border-radius: 50%;
+    background-color: black;
+}
+.toTop{
+    @include onTopCircle(93%,88%);
+    cursor: pointer;
+    z-index: 20;
+    transition: 300ms;
+    &:hover{
+        background-color: rgb(27, 27, 129);
+    }
+    svg {
+        color: white;
+        width: 20px;
+        margin: auto;
+    }
+}

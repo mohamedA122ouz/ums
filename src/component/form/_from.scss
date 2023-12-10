@@ -2,6 +2,8 @@
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
+    width: max-content;
+    margin: auto;
     $labelMargin: 25px;
     .formContainer {
         width: 600px;

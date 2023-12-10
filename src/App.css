@@ -363,6 +363,9 @@
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
 }
 .FlexContainer .formContainer {
   width: 600px;
@@ -481,6 +484,61 @@
   color: rgb(122, 173, 255);
 }
 
+.footer {
+  display: flex;
+  width: 100%;
+  background-color: #eff2f9;
+}
+.footer div {
+  margin: 0 auto;
+}
+.footer h4 {
+  padding: 10px;
+}
+.footer ul {
+  padding: 0px;
+}
+.footer li {
+  transition: 300ms;
+  color: gray;
+  border-bottom: 1px solid transparent;
+  list-style: none;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.footer li:hover {
+  box-sizing: border-box;
+  color: rgb(122, 173, 255);
+  border-bottom: 1px solid rgb(122, 173, 255);
+}
+
+.panelFooter {
+  height: 115px;
+  margin-top: 50%;
+}
+
+.toTop {
+  display: flex;
+  position: fixed;
+  left: 93%;
+  top: 88%;
+  height: 4vw;
+  width: 4vw;
+  border-radius: 50%;
+  background-color: black;
+  cursor: pointer;
+  z-index: 20;
+  transition: 300ms;
+}
+.toTop:hover {
+  background-color: rgb(27, 27, 129);
+}
+.toTop svg {
+  color: white;
+  width: 20px;
+  margin: auto;
+}
+
 body {
   font-family: "Open sans";
 }
@@ -526,6 +584,7 @@ html {
 }
 
 .panel {
+  background-color: white;
   display: flex;
 }
 .panel img {
@@ -542,4 +601,13 @@ html {
   align-items: center;
   font-size: 14pt;
   color: rgba(0, 0, 0, 0.7);
+}
+
+#lowerContent {
+  width: 100%;
+  display: flex;
+}
+
+.contentMargin {
+  margin: auto;
 }/*# sourceMappingURL=app.css.map */

@@ -11,10 +11,11 @@ export default function Bar({ currentImage, imageArray }) {
         currentImage(id);
     }
     useEffect(()=>{
-        setInterval(()=>{
+        let id = setInterval(()=>{
             console.log("cha")
             moveBackward();
         },4000);
+        return ()=> clearInterval(id);
     },[]);
     function moveBackward() {
         console.log("moveback");
