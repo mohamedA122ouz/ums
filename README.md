@@ -11,7 +11,7 @@
 
 *  
    * [Live Link](https://mohameda122ouz.github.io/ums)
-   * [repositry](https://www.github.com/mohameda122ouz/ums)
+   * [repository](https://www.github.com/mohameda122ouz/ums)
 
 # What I learned
 Don't nest to much as it will become harder to you to fix any thing in html when the nested elements is so specific
