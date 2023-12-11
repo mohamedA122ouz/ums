@@ -10,6 +10,7 @@ import logo from "./component/images/logo.png";
 import Form from './component/form/form';
 import Header from './component/header/header';
 import Footer from './component/footer/footer';
+import Counter from "./component/counters/Counter";
 const cardText = [
     "Login",
     "Early Admission Request For Bachelor's students",
@@ -81,6 +82,7 @@ function App() {
                     </div>
                 </div>
             </div>
+            <Counter></Counter>
             <Footer></Footer>
         </>
     )

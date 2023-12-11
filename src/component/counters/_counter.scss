@@ -1,0 +1,76 @@
+/* Sets the containers height and width */
+$PI:3.14;
+$r1:46;
+.counterContainer {
+    background-color: #243261;
+    height: 538px;
+    display: flex;
+    .base-timer {
+        position: relative;
+        height: 300px;
+        width: 300px;
+    }
+
+    /* Removes SVG styling that would hide the time label */
+    .base-timer__circle {
+        fill: none;
+        stroke: none;
+    }
+
+    /* The SVG path that displays the timer's progress */
+    .base-timer__path-elapsed {
+        stroke-width: 5px;
+        stroke: white;
+    }
+    
+    .base-timer__path-remaining {
+        /* Just as thick as the original ring */
+        stroke-width: 5px;
+        /* Rounds the line endings to create a seamless circle */
+        stroke-linecap: round;
+        /* Makes sure the animation starts at the top of the circle */
+        transform: rotate(90deg);
+        transform-origin: center;
+        transition: 1s linear all;
+        stroke-dasharray: (2* $PI * $r1) - 147;
+    }
+    .base-timer__svg {
+        // /* Flips the svg and makes the animation to move left-to-right
+        transform: scaleX(-1);
+    }
+    @keyframes countUp {
+        0%{
+            stroke-dasharray: (2* $PI * $r1) - 147;
+        }
+        100%{
+            stroke-dasharray: (2* $PI * $r1) - 80;
+        }
+    }
+    .color1{
+        stroke: #a86aff;
+    }
+    .color2{
+        stroke: #e9ae3e;
+    }
+    .color3{
+        stroke: #7facff;
+    }
+    .color4{
+        stroke: #ee68d5;
+    }
+}
+.LazyAnimation{
+    display: flex;
+    flex-direction: row;
+    // flex-wrap: wrap;
+    gap:10%;
+    margin: auto;
+    div{
+        margin: auto;
+    }
+}
+.startAnimation{
+    .base-timer__path-remaining {
+        animation: 1000ms countUp forwards;
+    }
+}

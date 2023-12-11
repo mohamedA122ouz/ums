@@ -539,6 +539,76 @@
   margin: auto;
 }
 
+/* Sets the containers height and width */
+.counterContainer {
+  background-color: #243261;
+  height: 538px;
+  display: flex;
+  /* Removes SVG styling that would hide the time label */
+  /* The SVG path that displays the timer's progress */
+}
+.counterContainer .base-timer {
+  position: relative;
+  height: 300px;
+  width: 300px;
+}
+.counterContainer .base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+.counterContainer .base-timer__path-elapsed {
+  stroke-width: 5px;
+  stroke: white;
+}
+.counterContainer .base-timer__path-remaining {
+  /* Just as thick as the original ring */
+  stroke-width: 5px;
+  /* Rounds the line endings to create a seamless circle */
+  stroke-linecap: round;
+  /* Makes sure the animation starts at the top of the circle */
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  stroke-dasharray: 141.88;
+}
+.counterContainer .base-timer__svg {
+  transform: scaleX(-1);
+}
+@keyframes countUp {
+  0% {
+    stroke-dasharray: 141.88;
+  }
+  100% {
+    stroke-dasharray: 208.88;
+  }
+}
+.counterContainer .color1 {
+  stroke: #a86aff;
+}
+.counterContainer .color2 {
+  stroke: #e9ae3e;
+}
+.counterContainer .color3 {
+  stroke: #7facff;
+}
+.counterContainer .color4 {
+  stroke: #ee68d5;
+}
+
+.LazyAnimation {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  margin: auto;
+}
+.LazyAnimation div {
+  margin: auto;
+}
+
+.startAnimation .base-timer__path-remaining {
+  animation: 1000ms countUp forwards;
+}
+
 body {
   font-family: "Open sans";
 }
