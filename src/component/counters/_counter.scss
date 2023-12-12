@@ -74,3 +74,11 @@ $r1:46;
         animation: 1000ms countUp forwards;
     }
 }
+.numbers{
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 36%;
+    transform: translate(-50%, -50%);
+    font-size: 25pt;
+}

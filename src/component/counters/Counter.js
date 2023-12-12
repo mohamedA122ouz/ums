@@ -28,8 +28,8 @@ function Counter() {
                             </path>
                         </g>
                     </svg>
-                    <span>
-                        +19
+                    <span className="numbers">
+                        19+
                     </span>
                 </div>
                 <div class="base-timer">
@@ -44,8 +44,8 @@ function Counter() {
                             </path>
                         </g>
                     </svg>
-                    <span>
-                        +19
+                    <span className="numbers">
+                        1,229,145
                     </span>
                 </div>
                 <div class="base-timer">
@@ -60,8 +60,8 @@ function Counter() {
                             </path>
                         </g>
                     </svg>
-                    <span>
-                        +19
+                    <span className="numbers">
+                        220614+
                     </span>
                 </div>
                 <div class="base-timer">
@@ -76,8 +76,8 @@ function Counter() {
                             </path>
                         </g>
                     </svg>
-                    <span>
-                        +19
+                    <span className="numbers">
+                        20540+
                     </span>
                 </div>
             </div>
