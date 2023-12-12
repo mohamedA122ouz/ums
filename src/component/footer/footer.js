@@ -30,7 +30,7 @@ export default function Footer() {
                     <h4>
                         FollowUs
                     </h4>
-                    <div>
+                    <div className="inFooter">
                         {socialMedia[1]}
                         {socialMedia[2]}
                         {socialMedia[3]}
